@@ -48,9 +48,9 @@ export default function Contact() {
     // If there is any error, stop here
     if (Object.keys(newErrors).length > 0) return;
 
-    // All good: clear the form and say thanks
-    setValues({ name: "", email: "", message: "" });
-    setStatus("Thanks! Your message has been sent.");
+    setStatus(
+      "Your message is valid, but message delivery is not configured yet."
+    );
   }
 
   return (
